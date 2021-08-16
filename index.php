@@ -12,7 +12,7 @@ if(isset($_GET['locale'])){
   <body>
     <ul style="float:right;list-style-type: none;"><li style="float:left"><a style="text-decoration:none" href="/?locale=en">
       <?php 
-      if($_GET['locale]=='en'){
+      if($_COOKIE['locale]=='en'){
       echo 'EN';
       
       }else{
