@@ -4650,8 +4650,15 @@ content="width=device-width, initial-scale=1, shrink-to-fit=no">
 .5in'>
 
 <div class=WordSection1>
-
+	<ul style="float:right;"><li style="float:left"><a href="/?locale=en"><?php ($_COOKIE('locale')=='en')?'EN':'ອັງກິດ'; ?></a></li><li style="float:left"><a href="/?locale=la">($_COOKIE('locale')=='en')?'la':'ລາວ';</a></li></ul>
 <div>
+<?php
+	if(isset($_GET('locale'))){
+	
+	setcookie('locale', $_GET('locale'), time() + (86400 * 30), "/");
+	}
+	
+	?>	
 
 <h1 align=center style='margin-top:75.0pt;text-align:center'><span lang=EN
 style='mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
